@@ -4,4 +4,4 @@
   "start": "next start",
   "deploy": "npm run build && gh-pages -d out"
 },
-"homepage": "https://ToxicCoder02.github.io/Codeweb"
+"homepage": "https://toxiccoder02.github.io/Codeweb"
