@@ -30,12 +30,14 @@ const Home = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      {stage === 1 && <PersonalInfoForm formData={formData} setFormData={setFormData} />}
-      {stage === 2 && <TravelPreferencesForm formData={formData} setFormData={setFormData} />}
-      {stage === 3 && <HealthSafetyForm formData={formData} setFormData={setFormData} />}
-      <NavigationButtons currentStage={stage} setStage={setStage} totalStages={3} />
-    </form>
+    <div style={{ padding: '20px' }}>
+      <form onSubmit={handleSubmit}>
+        {stage === 1 && <PersonalInfoForm formData={formData} setFormData={setFormData} />}
+        {stage === 2 && <TravelPreferencesForm formData={formData} setFormData={setFormData} />}
+        {stage === 3 && <HealthSafetyForm formData={formData} setFormData={setFormData} />}
+        <NavigationButtons currentStage={stage} setStage={setStage} totalStages={3} />
+      </form>
+    </div>
   );
 };
 
