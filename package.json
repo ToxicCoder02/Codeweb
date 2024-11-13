@@ -1,0 +1,7 @@
+"scripts": {
+  "dev": "next dev",
+  "build": "next build && next export",
+  "start": "next start",
+  "deploy": "npm run build && gh-pages -d out"
+},
+"homepage": "https://ToxicCoder02.github.io/Codeweb"
